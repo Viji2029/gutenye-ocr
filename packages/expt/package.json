@@ -1,0 +1,15 @@
+{
+  "name": "ocr-project",
+  "version": "1.0.0",
+  "description": "A project using @gutenye/ocr-node for OCR functionality",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@gutenye/ocr-node": "file:../node",
+    "axios": "^1.7.7"
+  },
+  "devDependencies": {}
+}

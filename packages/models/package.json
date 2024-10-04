@@ -13,8 +13,9 @@
     "./node": "./node.js"
   },
   "files": ["assets", "node.js", "!**/__tests__"],
+ 
   "scripts": {
-    "prepublishOnly": "cp ../../README.md .",
+    "prepublishOnly": "cp ../../README.md ",
     "postpublish": "rm README.md"
   }
 }

@@ -192,7 +192,7 @@ function afAfRec(l: Line[]) {
     const t = []
     let m = 0
     for (const j of i) {
-      if(!ind.get(j)) continue;
+      if(!ind.has(j)) continue;
       const x = l[ind.get(j)!]
       t.push(x.text)
       m += x.mean

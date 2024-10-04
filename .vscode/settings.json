@@ -103,5 +103,6 @@
   },
   "[kotlin]": {
     "editor.defaultFormatter": "fwcd.kotlin"
-  }
+  },
+  "liveServer.settings.port": 5501
 }
