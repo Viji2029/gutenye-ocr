@@ -19,7 +19,7 @@ const runOCRForImages = async () => {
 
     // Filter out only image files (e.g., jpg, png)
     const imageFiles = files.filter(file => /\.(jpg|jpeg|png)$/.test(file));
-
+    const results = {};
     // Iterate through each image file
     for (const file of imageFiles) {
       const imagePath = path.join(folderPath, file);
@@ -36,6 +36,10 @@ const runOCRForImages = async () => {
 
       // Display the result after detection
       console.log(`OCR Result for ${file}:`, result);
+
+      results[file] = result;
+      fs.writeFileSync('ocr_results-test.json', JSON.stringify(results, null, 2));
+
     }
   } catch (error) {
     console.error('Error while processing images:', error);
@@ -114,7 +118,7 @@ const runOCRForURLs = async () => {
       results[url] = result;
 
       // Optionally, delete the image after processing (cleanup)
-      fs.unlinkSync(imagePath);
+      // fs.unlinkSync(imagePath);
     }
 
     // Log the final results
@@ -130,4 +134,6 @@ const runOCRForURLs = async () => {
 
 
 // Call the function to run OCR on images from URLs
-runOCRForURLs();
+// runOCRForURLs();
+runOCRForImages();
+
