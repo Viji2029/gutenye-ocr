@@ -1,15 +1,15 @@
 To run this experiment, follow the below steps:
-1. Go to the foloder "packages/common" and do the following:
+1. Go to the folder "packages/common" and do the following:
       - run `yarn link` .
       - run `yarn`
       - run `./ake.sh build`
-2.  Go to the foloder "packages/model" and do the following:
+2.  Go to the folder "packages/model" and do the following:
       - run `yarn link` .
       - run `yarn`
       - run `./ake.sh build`
     If you are replacing the models in assets, with a different name, update them in node.js
 3. Go to the foloder "packages/node" and do the following:
-      - run `yarn link @gutenye/common`  and `yarn link @gutenye/ocr-model`
+      - run `yarn link @gutenye/ocr-common`  and `yarn link @gutenye/ocr-models`
       - run `yarn`
       - run `./ake.sh build`
 4. Now in the current directory, run `yarn`

@@ -23,8 +23,8 @@
 "@gutenye/ocr-node@file:../node":
   version "1.4.4"
   dependencies:
-    "@gutenye/ocr-common" "file:../../../../../.cache/yarn/v6/npm-@gutenye-ocr-node-1.4.4-22b0bd96-321e-42c2-ab8c-5481b98c95c2-1728042561303/node_modules/@gutenye/common"
-    "@gutenye/ocr-models" "file:../../../../../.cache/yarn/v6/npm-@gutenye-ocr-node-1.4.4-22b0bd96-321e-42c2-ab8c-5481b98c95c2-1728042561303/node_modules/@gutenye/models"
+    "@gutenye/ocr-common" "file:../../../../usr/local/share/.cache/yarn/v6/npm-@gutenye-ocr-node-1.4.4-925d9d5b-be17-43fe-a59b-6b3067f811bb-1729744750229/node_modules/@gutenye/common"
+    "@gutenye/ocr-models" "file:../../../../usr/local/share/.cache/yarn/v6/npm-@gutenye-ocr-node-1.4.4-925d9d5b-be17-43fe-a59b-6b3067f811bb-1729744750229/node_modules/@gutenye/models"
     onnxruntime-node "^1.17.3-rev.1"
     sharp "^0.33.3"
     tsc-alias "^2.0.0"
