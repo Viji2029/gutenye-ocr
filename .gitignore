@@ -179,3 +179,5 @@ dist
 
 # Local Netlify folder
 .netlify
+packages/expt/downloaded_images/
+*.html
