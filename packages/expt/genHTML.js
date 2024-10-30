@@ -4,7 +4,7 @@ import sharp from 'sharp';
 import axios from 'axios';
 
 // Path to your JSON file
-const jsonFilePath = './ocr_results.json';
+const jsonFilePath = './ocr_results-test-sample.json';
 
 // Read the JSON file
 const data = JSON.parse(fs.readFileSync(jsonFilePath, 'utf8'));
@@ -189,7 +189,7 @@ async function generateHTMLV2() {
         //htmlContent += `<div class="item" style="position: relative;">
             // <img src="./test_imgs/${url}" alt="${url}" style="width: ${resizedImageWidth}px; height: ${resizedImageHeight}px;">`;
         htmlContent += `<div class="item" style="position: relative;">
-            <img src="${url}" alt="${url}" style="width: ${resizedImageWidth}px; height: ${resizedImageHeight}px;">`;
+            <img src="./test_imgs/${url}" alt="${url}" style="width: ${resizedImageWidth}px; height: ${resizedImageHeight}px;">`;
 
         if (jsonObjects.length > 0) {
             jsonObjects.forEach(obj => {
